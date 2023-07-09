@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	background: #ddd;
+	margin: 1rem;
+	padding: 1rem;
+	max-width: 500px;
+	margin: 2rem auto;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol {
+	padding-left: 0;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+	max-width: 300px;
+
+}
+
+#img-container {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	border: 8px solid orange;
+	box-shadow: 12px 12px 2px 1px #eb6e34;
+	padding: 30px;
+}
+
+
+ul {
+	list-style-type: circle;
+	font-weight: bolder;
+}
+
+ol li {
+	padding: 8px;
+}
+
+
+#hello-word {
+	font-size: 30px;
+	filter: drop-shadow(4px 4px 4px black);
+	font-weight: bold;
+}
+
+#contact-us {
+	text-align: center;
+}
+
+#contact-form {
+	margin: 2rem auto;
+	border: 2px solid orange;
+	padding: 2rem;
+	border-radius: 5px;
+}
+
+.label-form {
+	display: block;
+	padding: 1rem 0 .5rem;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#input-form,
+textarea {
+	display: block;
+	width: 100%;
+	border: 2px solid orange;
+	padding: .5rem;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+
+.sendBtn {
+	border: 0;
+	background-color: orange;
+	padding: .5rem;
+	color: white;
+	margin: 1rem 0;
+	width: auto;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .3s background ease;
+}
+
+.sendBtn:hover {
+	background-color: #eb6e34;
+}
+
+
+fieldset {
+	display: flex;
+	border: 2px solid orange;
+	flex-direction: column;
+	gap: .5em;
+}
+
+legend {
+	background: white;
+	padding: 0.2em 1em;
+	color: #061e22;
+}
+
+.label-checkbox {
+	display: flex;
+	align-items: center;
+	padding: 2px;
+}
+
+.input-checkbox[type="checkbox"] {
+	margin-right: 0.5em;
+}
+
+.input-checkbox {
+	accent-color: #eb6e34;
+}
+
+.container-sections {
+	padding: 15px;
+}
+
+span {
+	color: #eb6e34;
+	font-style: italic;
+}
+
+.welcome {
+	filter: drop-shadow(4px 4px 4px black);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#suggestions {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+#btn-random {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+#restaurantResult {
+	font-size: 20px;
+	filter: drop-shadow(4px 4px 4px orange);
+	text-align: center;
+	color: #eb6e34;
+}
+
+
+h3 {
+	text-align: center;
+}
+
+.heading-sections {
+	filter: drop-shadow(3px 2px 2px grey);
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+.container-sections:last-child {
+	text-align: center;
+}
+
+p {
+	line-height: 30px;
+}
+
+.btn-yellow {
+	font-size: 0.9rem;
+	font-weight: bold;
+	background-color: #FEE135;
+	display: inline-block;
+	margin-bottom: 3rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFFF33;
+	border: #FFFF33 0.125em solid;
+	/* em changes according the fontsize */
+	padding: 0.25em 1em;
+	border-radius: 1em;
+
+	/* glowing affect  */
+	text-shadow: 0 0 0.123em hsl(0, 0%, 100% / 0.3), 0 0 0.45em currentColor;
+	/* currenctColor means use the color of the text*/
+
+	box-shadow: inset 0 0 0.5em 0 #FFFF33, 0 0 0.5em 0 #FFFF33;
+
+	position: relative;
+}
+
+.btn-yellow::before {
+	pointer-events: none;
+	content: '';
+	position: absolute;
+	background-color: #FFFF33;
+	top: 120%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+
+	filter: blur(1.5em);
+	opacity: 0.7;
+
+}
+
+.btn-yellow::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 2em .5rem #FFFF33;
+	opacity: 0;
+	background-color: #FFFF33;
+	z-index: -1;
+	transition: opacity 100ms linear;
+
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+
+	color: rgb(49, 32, 43);
+	text-shadow: none;
+}
+
+.btn-yellow:hover::before,
+.btn-yellow:focus::before {
+	opacity: 1;
+}
+
+.btn-yellow:hover::after,
+.btn-yellow:focus::after {
+	opacity: 1;
+}
