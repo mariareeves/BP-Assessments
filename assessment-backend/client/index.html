@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Back End Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container mx-auto px-4 font-mono bg-gradient-to-r from-yellow-200 via-sky-200 to-green-300">
+  <section class="py-6 flex justify-center space-x-4">
+    <button
+      class="bg-transparent hover:bg-yellow-500 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded"
+      id="complimentButton">Get a compliment</button>
+
+    <button
+      class="bg-transparent hover:bg-yellow-500 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded"
+      id="fortuneBtn">Get a random fortune</button>
+  </section>
+
+  <section class="py-6">
+    <label for="quotes" class="block text-xl ont-semibold mb-2 dark:text-yellow-400 leading-relaxed ">Get an
+      inspirational
+      Quote:</label>
+    <select name="quotes" id="quotes"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-green-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option value="motivation">Motivation</option>
+      <option value="success">Success</option>
+      <option value="happiness">Happiness</option>
+    </select>
+    <button id="quoteBtn"
+      class="bg-transparent hover:bg-yellow-500 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded">Get
+      Quote</button>
+    <div class="my-4" id="quoteDisplay"></div>
+  </section>
+
+  <section class="py-6">
+    <form id="goals-form" class="flex">
+      <label for="goals" class="mb-2 text-sm font-medium text-green-700 dark:text-green-500 py-2 mr-2 ">Enter your
+        goals:</label>
+      <input type="text" name="goals" id="goalsInput"
+        class="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block p-2.5 dark:bg-white dark:border-green-500 mr-2"
+        placeholder="Type here">
+      <input id="submitInput" type="submit"
+        class="bg-transparent hover:bg-yellow-500 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded-lg">
+    </form>
+    <div class="my-2 " id="displayGoals"></div>
+  </section>
+
+
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
