@@ -257,11 +257,11 @@ module.exports = {
             returning *;
         `)
             .then(dbRes => {
-                console.log('I am in the createCity', dbRes[0])
+                // console.log('I am in the createCity', dbRes[0])
                 res.status(200).send(dbRes)
             })
             .catch(err => {
-                console.log(err)
+                // console.log(err)
                 res.status(500).send(err)
             })
     },
@@ -274,7 +274,7 @@ module.exports = {
             order by city.rating desc;
         `)
             .then(dbRes => {
-                console.log('I am in the getCities', dbRes[0])
+                // console.log('I am in the getCities', dbRes[0])
                 res.status(200).send(dbRes[0])
             })
             .catch(err => {
@@ -294,7 +294,7 @@ module.exports = {
                 res.status(200).send(dbRes[0])
             })
             .catch(err => {
-                console.log(err)
+                // console.log(err)
                 res.status(500).send(err)
             })
     }
